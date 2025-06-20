@@ -1,7 +1,7 @@
 import { useCookies } from "react-cookie"
 
 function MyForm() {
-  const [cookies, setCookie, removeCookie] = useCookies(["player-name"]);
+  const [cookies, setCookie] = useCookies(["player-name"]);
 
   function onChange(newPlayerName: string): void {
     setCookie("player-name", newPlayerName);
